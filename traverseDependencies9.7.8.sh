@@ -1,5 +1,6 @@
 #!/bin/sh
 echo "Step 1: Updating and Upgrading OS:"
+sudo su
 dnf update -y && dnf upgrade -y
 echo ""
 echo ""
@@ -33,6 +34,4 @@ cd ~/traverse9.7/
 echo ""
 echo ""
 echo "Step 5: Begin Traverse Installation:"
-echo "Switching to root:"
-su root
 sh ./install.sh
