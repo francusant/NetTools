@@ -1,6 +1,5 @@
 #!/bin/sh
 echo "Step 1: Updating and Upgrading OS:"
-sudo su
 dnf update -y && dnf upgrade -y
 echo ""
 echo ""
@@ -30,7 +29,6 @@ echo ""
 echo ""
 echo "Step 4: Extracting Traverse:"
 gunzip -c traverse-9.7.8-linux-alma.tar.gz | tar xpf -
-sudo su root
 cd ~/Downloads/traverse9.7/
 echo ""
 echo ""
