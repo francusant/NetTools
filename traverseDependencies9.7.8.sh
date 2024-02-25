@@ -25,3 +25,14 @@ yum -y install libxcrypt-compat.i686
 yum -y install libicu.x86_64
 yum -y install libstdc++.so.6
 yum -y install fontconfig.x86_64
+echo ""
+echo ""
+echo "Step 4: Extracting Traverse:"
+gunzip -c traverse-9.7.8-linux-alma.tar.gz | tar xpf -
+cd ~/traverse9.7/
+echo ""
+echo ""
+echo "Step 5: Begin Traverse Installation:"
+echo "Switching to root:"
+su root
+sh ./install.sh
