@@ -32,5 +32,3 @@ gunzip -c traverse-9.7.8-linux-alma.tar.gz | tar xpf -
 cd ~/Downloads/traverse9.7/
 echo ""
 echo ""
-echo "Step 5: Begin Traverse Installation:"
-sh ./install.sh
