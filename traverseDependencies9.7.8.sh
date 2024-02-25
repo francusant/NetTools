@@ -1,4 +1,4 @@
-o#!/bin/sh
+#!/bin/sh
 echo "Step 1: Updating and Upgrading OS:"
 dnf update -y && dnf upgrade -y
 echo ""
