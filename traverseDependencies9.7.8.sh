@@ -30,7 +30,7 @@ echo ""
 echo ""
 echo "Step 4: Extracting Traverse:"
 gunzip -c traverse-9.7.8-linux-alma.tar.gz | tar xpf -
-cd ~/traverse9.7/
+cd traverse9.7/
 echo ""
 echo ""
 echo "Step 5: Begin Traverse Installation:"
