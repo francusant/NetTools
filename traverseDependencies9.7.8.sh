@@ -3,11 +3,12 @@ echo "Step 1: Updating and Upgrading OS:"
 dnf update -y && dnf upgrade -y
 echo ""
 echo ""
-echo "Step 2: Downloading traverse:"
+echo "Step 2: Changing Directory to ~/Downloads/"
 cd ~/Downloads/
+pwd
+echo "Step 3: Downloading Traverse-9.7.8"
 wget --no-check-certificate https://download.kaseya.com/components/traverse/v9.7.0.0/453/traverse-9.7.8-linux-alma.tar.gz
-sha1sum traverse-9.7.8-linux-alma.tar.gz
-echo "660d0432a0c97884dfff9894c53a08697f1e4ff1  traverse-9.7.8-linux-alma.tar.gz -- Does it match? If not stop the installation"
+sha1sum traverse-9.7.8-linux-alma.tar.gz > traverse_download_sha1sum.log
 echo ""
 echo ""
 echo "Step 3: Installing Dependencies"
