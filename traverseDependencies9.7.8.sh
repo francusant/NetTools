@@ -3,7 +3,7 @@ echo "Step 1: Updating and Upgrading OS:"
 dnf update -y && dnf upgrade -y
 echo ""
 echo ""
-echo "Step 2: Creating and changinh Directories to ~/Downloads/"
+echo "Step 2: Creating and changing Directories to ~/Downloads/"
 cd ~/
 mkdir Downloads
 cd ~/Downloads/
