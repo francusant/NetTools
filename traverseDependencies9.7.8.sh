@@ -3,7 +3,9 @@ echo "Step 1: Updating and Upgrading OS:"
 dnf update -y && dnf upgrade -y
 echo ""
 echo ""
-echo "Step 2: Changing Directory to ~/Downloads/"
+echo "Step 2: Creating and changinh Directories to ~/Downloads/"
+cd ~/
+mkdir Downloads
 cd ~/Downloads/
 pwd
 echo ""
@@ -31,5 +33,7 @@ echo ""
 echo "Step 5: Extracting Traverse:"
 gunzip -c traverse-9.7.8-linux-alma.tar.gz | tar xpf -
 cd ~/Downloads/traverse9.7/
+pwd
 echo ""
 echo ""
+echo "Run sh ./install.sh to get the installation started."
