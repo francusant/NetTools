@@ -59,7 +59,7 @@ echo ""
 
 echo "Step 6: Extracting Traverse:"
 gunzip -c traverse-9.7.8-linux-alma.tar.gz | tar xpf -
-cd ~/Downloads/traverse9.7/
+cd /root/Downloads/traverse9.7/
 pwd
 echo ""
 echo ""
