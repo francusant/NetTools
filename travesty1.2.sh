@@ -2,8 +2,7 @@
 
 # Script created by Francisco Santistevan on 2024-02-26
 
-echo"TRAVESTY v1.2 by Francisco Santistevan"
-sleep 10
+echo "TRAVESTY v1.2 by Francisco Santistevan"
 echo "Step 1: Updating and Upgrading OS:"
 dnf update -y && dnf upgrade -y
 echo ""
@@ -67,11 +66,9 @@ echo ""
 
 echo"Step 7: Installing Traverse:"
 echo"Please pay attention to this section, and make sure to save your configurations for future reference"
-sleep 10
 echo" "
 echo"Current Directory:"
 pwd
-sleep 10
 sh ./install.sh
 
 
