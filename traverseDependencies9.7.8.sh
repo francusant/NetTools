@@ -41,5 +41,15 @@ pwd
 echo ""
 echo ""
 
+echo"Step 7: Installing Traverse:"
+echo"Please pay attention to this section, and make sure to save your configurations for future reference"
+sleep 10
+echo" "
+echo"Current Directory:"
+pwd
+sleep 10
+sh ./install.sh
+
+
 echo "Please reboot the system to apply changes."
 echo ""
