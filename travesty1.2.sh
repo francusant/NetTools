@@ -18,7 +18,31 @@ echo ""
 echo ""
 
 echo "Step 3: Installing Dependencies"
-dnf -y install wget tar zip popt.i686 zlib.i686 expat-devel.i686 glib2.i686 libnsl.i686 libxcrypt-compat.i686 libicu.x86_64 libstdc++.so.6 fontconfig.x86_64
+echo "Installing wget"
+yum -y install wget 
+echo "Installing tar"
+yum -y install tar
+echo "Installing zip"
+yum -y install zip 
+echo "Installing popt.i686"
+yum -y install popt.i686 
+echo "Installing zlib.i686"
+yum -y install zlib.i686
+echo "Installing expat-devel.i686"
+yum -y install expat-devel.i686
+echo "Installing glib2.i686"
+yum -y install glib2.i686
+echo "Installing libnsl.i686"
+yum -y install libnsl.i686
+echo "Installing libxcrypt-compat.i686"
+yum -y install libxcrypt-compat.i686
+echo "Installing libicu.x86_64"
+yum -y install libicu.x86_64
+echo "Installing libstdc++.so.6"
+yum -y install libstdc++.so.6
+echo "Installing fontconfig.x86_64"
+yum -y install fontconfig.x86_64
+echo ""
 echo ""
 echo ""
 
