@@ -47,7 +47,7 @@ echo ""
 echo ""
 
 echo "Step 4: Installing Graphical Interface (Optional)"
-sudo dnf groupinstall "Server with GUI"
+sudo dnf -y groupinstall "Server with GUI"
 sudo systemctl set-default graphical.target
 echo ""
 echo ""
