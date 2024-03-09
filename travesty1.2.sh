@@ -3,12 +3,7 @@
 # Script created by Francisco Santistevan on 2024-02-26
 
 echo "TRAVESTY v1.2 by Francisco Santistevan"
-echo "Step 1: Updating and Upgrading OS:"
-dnf update -y && dnf upgrade -y
-echo ""
-echo ""
-
-echo "Step 2: Creating and changing Directories to ~/Downloads/"
+echo "Step 1: Creating and changing Directories to ~/Downloads/"
 cd ~/
 mkdir Downloads
 cd ~/Downloads/
@@ -16,7 +11,7 @@ pwd
 echo ""
 echo ""
 
-echo "Step 3: Installing Dependencies"
+echo "Step 2: Installing Dependencies"
 echo "Installing wget"
 yum -y install wget 
 echo "Installing tar"
@@ -41,36 +36,36 @@ echo "Installing libstdc++.so.6"
 yum -y install libstdc++.so.6
 echo "Installing fontconfig.x86_64"
 yum -y install fontconfig.x86_64
-echo ""
-echo ""
-echo ""
+echo " "
+echo " "
+echo " "
 
-echo "Step 4: Installing Graphical Interface (Optional)"
+echo "Step 3: Installing Graphical Interface (Optional)"
 sudo dnf -y groupinstall "Server with GUI"
 sudo systemctl set-default graphical.target
-echo ""
-echo ""
+echo " "
+echo " "
 
-echo "Step 5: Downloading Traverse-9.7.8"
+echo "Step 4: Downloading Traverse-9.7.8"
 wget --no-check-certificate https://download.kaseya.com/components/traverse/v9.7.0.0/453/traverse-9.7.8-linux-alma.tar.gz
 sha1sum traverse-9.7.8-linux-alma.tar.gz > traverse_download_sha1sum.log
-echo ""
-echo ""
+echo " "
+echo " "
 
-echo "Step 6: Extracting Traverse:"
+echo "Step 5: Extracting Traverse:"
+echo " Extracting Traverse Version 9.7.8"
 gunzip -c traverse-9.7.8-linux-alma.tar.gz | tar xpf -
-cd /root/Downloads/traverse9.7/
 pwd
-echo ""
-echo ""
+echo " "
+echo " "
 
-echo"Step 7: Installing Traverse:"
-echo"Please pay attention to this section, and make sure to save your configurations for future reference"
-echo" "
-echo"Current Directory:"
+echo "Step 6: Installing Traverse:"
+echo "Please pay attention to this section, and make sure to save your configurations for future reference"
+echo " "
+echo "Current Directory:"
 pwd
 sh ./install.sh
 
 
 echo "Please reboot the system to apply changes."
-echo ""
+echo " "
